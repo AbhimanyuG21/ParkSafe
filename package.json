@@ -9,7 +9,7 @@
   "author": "AbhimanyuG21",
   "license": "ISC",
   "engines": {
-    "node": "16.13.1"
+    "node": "16.13.2"
   },
   "dependencies": {
     "@sendgrid/mail": "^7.6.0",
