@@ -2,6 +2,7 @@ require("dotenv").config()
 const express = require("express")
 const bodyParser = require("body-parser")
 const ejs = require("ejs")
+const path= require("path")
 const mongoose = require("mongoose")
 const session = require("express-session")
 const passport = require("passport")
@@ -23,7 +24,7 @@ app.set("view engine", "ejs")
 app.use(bodyParser.urlencoded({
   extended: true
 }))
-app.use(express.static(__dirname+"/public"))
+app.use(express.static(path.join(__dirname, "public")))
 
 app.use(session({
   secret: process.env.SECRET,
