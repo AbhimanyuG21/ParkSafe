@@ -1,0 +1,67 @@
+<%- include('partials/headerLoggedIn') %>
+<div class="row">
+  <div class="container col-6">
+    <div class="city-box">
+      <p class="city-text"><%=city%></p>
+    </div>
+  </div>
+  <div class="col-6">
+
+  </div>
+  <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <img class="card-img-top parking-img-card" src="/images/Parking-A.jpg" alt="Parking A">
+      <div class="card-body">
+        <h5 class="card-title"><%=city%>-A</h5>
+        <p class="card-text">With world-class security and accessibility services.</p>
+        <form action="/booking/<%=city%>" method="post">
+            <button type="submit" href="/book-now" name="site" value="<%=city%>-A" class="btn btn-primary">Book now!</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <img class="card-img-top parking-img-card" src="/images/Parking-B.jpg" alt="Parking B">
+      <div class="card-body">
+        <h5 class="card-title"><%=city%>-B</h5>
+        <p class="card-text">With world-class security and accessibility services.</p>
+        <form action="/booking/<%=city%>" method="post">
+            <button type="submit" href="/book-now" name="site" value="<%=city%>-B" class="btn btn-primary">Book now!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <img class="card-img-top parking-img-card" src="/images/Parking-C.jpg" alt="Parking C">
+      <div class="card-body">
+        <h5 class="card-title"><%=city%>-C</h5>
+        <p class="card-text">With world-class security and accessibility services.</p>
+        <form action="/booking/<%=city%>" method="post">
+            <button type="submit" href="/book-now" name="site" value="<%=city%>-C" class="btn btn-primary">Book now!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <img class="card-img-top parking-img-card" src="/images/Parking-D.jpg" alt="Parking D">
+      <div class="card-body">
+        <h5 class="card-title"><%=city%>-D </h5>
+        <p class="card-text">With world-class security and accessibility services.</p>
+        <form action="/booking/<%=city%>" method="post">
+            <button type="submit" href="/book-now" name="site" value="<%=city%>-D" class="btn btn-primary">Book now!</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<%- include('partials/footer') %>

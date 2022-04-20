@@ -1,0 +1,64 @@
+<%-include("partials/headerLoggedIn") %>
+
+<hr>
+<div class="container row">
+  <div class="col-md-3">
+    <div class="my-profile">
+      <h3>Account</h3>
+      <p><%=user%></p>
+    </div>
+
+  </div>
+  <div class="col-md-2 d-flex">
+    <div class="vr">
+
+    </div>
+
+  </div>
+  <div class="col-md-7">
+    <h3 style="display: inline; margin-right: 3%">Your Bookings</h3>
+
+  </div>
+
+</div>
+<div class="container row">
+  <div class="col-md-3" style="padding-top:3%">
+
+  </div>
+  <div class="col-md-7 d-flex">
+
+  </div>
+  <div class="container row">
+    <div class="col-md-3">
+      <div class="my-profile">
+        <p><a href="/my/details" class="text-decoration-none link-secondary">Your Details</a></p>
+        <p><a href="/view/orders" class="text-decoration-none link-dark"><strong>View Bookings</strong></a></p>
+      </div>
+
+    </div>
+    <div class="col-md-9">
+      <%bookings.slice().reverse().forEach((booking)=>{%>
+        <form action="/view/orders" method="post">
+          <div style="margin-left: 3%" class="card border-dark">
+            <h5 class="card-header">Booking Id: <%=booking._id.toString()%></h5>
+            <!-- <input style="display:inline" class="form-control" type="text" name="bookingId" value="Booking: " disabled /> -->
+            <div class="card-body">
+              <!-- <input style="border: 0; box-shadow: none; background-color: white" class="form-control" type="text" name="site" value="Site: <%=booking.site%>" disabled />
+              <input style="border: 0; box-shadow: none; background-color: white" class="form-control" type="text" name="site" value="Date: <%=booking.date%>" disabled />
+              <input style="border: 0; box-shadow: none; background-color: white" class="form-control" type="text" name="site" value="Time: <%=booking.time%>" disabled />
+              <input style="border: 0; box-shadow: none; background-color: white" class="form-control" type="text" name="site" value="" disabled /> -->
+              <p class="card-text">Site: <%=booking.site%></p>
+              <p class="card-text">Date: <%=booking.date%></p>
+              <p class="card-text">Time: <%=booking.time%></p>
+              <p class="card-text">Space Name: <%=booking.space_id%></p>
+              <button class="btn btn-outline-danger" type="submit" name="cancel" value="<%=booking._id%>">Cancel Ticket</button>
+            </div>
+          </div>
+        <%})%>
+        </form>
+
+
+
+    </div>
+
+    <%- include("partials/footer")%>

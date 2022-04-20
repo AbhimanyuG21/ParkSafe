@@ -1,0 +1,43 @@
+<% if(status=="Default"){ %>
+<%- include('partials/header') %>
+<% }else{ %>
+<%- include('partials/headerLoggedIn') %>
+<% } %>
+
+<div class="container">
+  <h2 style="padding-top:2%"><strong>Any questions?</strong> Reach out to us.</h2>
+</div>
+<div class="container">
+	<div class="row">
+		<div style="padding-top: 4%">
+            <form id="queryForm" action="/contact" method="post">
+                <div class="form-group row">
+                  <div class="col-sm-3">
+                    <input id="name" name="name" type="text" class="form-control mb-2" placeholder="Name">
+                  </div>
+                  <div class="col-sm-3">
+                    <input id="email" name="email" type="email" class="form-control mb-2" placeholder="Email address">
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input id="subject" class="form-control mb-2" type="text" name="subject" placeholder="Subject">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <textarea id="message" name="message" class="form-control" form="queryForm" placeholder="Your Message" rows="5"></textarea>
+                  </div>
+
+                </div>
+
+                <div style="padding-top:1%">
+                    <button id="contact-submit" type="submit" class="btn btn-primary input-medium pull-right md-2">Send</button>
+                </div>
+            </form>
+        </div>
+	</div>
+</div>
+
+<%- include('partials/footer') %>

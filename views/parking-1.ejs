@@ -1,0 +1,23 @@
+<%- include('partials/headerLoggedIn') %>
+<div class="container row">
+  <div class="col-6 city-selection">
+    <form action="/booking" method="post">
+      <label for="inlineFormSelectPref">Choose your city</label>
+      <select name="city" class="form-select" id="inlineFormSelectPref" onchange="this.form.submit()" onfocus="this.selectedIndex=-1">
+        <option selected disabled>Choose your location</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Bangalore">Bangalore</option>
+      </select>
+    </form>
+
+    </div>
+    <div class="col-6">
+
+    </div>
+</div>
+
+
+<%- include('partials/footer') %>

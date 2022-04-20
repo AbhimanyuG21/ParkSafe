@@ -1,0 +1,93 @@
+<%-include("partials/headerLoggedIn") %>
+
+<hr>
+<div class="container row">
+  <div class="col-md-3">
+    <div class="my-profile">
+      <h3>Account</h3>
+      <p><%=name%></p>
+    </div>
+
+  </div>
+  <div class="col-md-7 d-flex">
+    <div class="vr">
+
+    </div>
+
+  </div>
+
+</div>
+<div class="container row">
+  <div class="col-md-3" style="padding-top:3%">
+
+  </div>
+  <div class="col-md-7 d-flex">
+
+</div>
+<div class="container row">
+  <div class="col-md-3">
+    <div class="my-profile">
+        <p><a href="/my/details" class="text-decoration-none link-dark"><strong>Your Details</strong></a></p>
+        <p><a href="/view/orders" class="text-decoration-none link-secondary">View Bookings</a></p>
+    </div>
+
+  </div>
+  <div class="col-md-7">
+    <div class="profile-details">
+        <h3 style="display: inline; margin-right: 3%">Profile Details</h3><button class="btn btn-outline-secondary" type="button" name="editProfile" onclick="editDetails()"><i class="far fa-edit"></i></button>
+        <hr>
+        <table class="table table-borderless table-light" >
+          <form id="detailsForm" action="/my/details" method="post">
+            <tr>
+              <td></td>
+              <td style="text-align: left; marginLeft:2%">Name: </td>
+              <td><input id="profileName" class="form-control" type="text" name="name" value="<%=name%>" disabled> </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align: left; marginLeft:2%">Email:</td>
+              <td><input id="profileEmail" class="form-control" type="email" name="email" value="<%=email%>" disabled> </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align: left; marginLeft:2%">Contact: </td>
+              <td><input id="profilePhone" class="form-control" type="text" name="phone" value="<%=phone%>" disabled> </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align: left; marginLeft:2%">Full Address: </td>
+              <td><textarea id="profileAddress" class="form-control" name="address" rows="3" cols="30" form="detailsForm" disabled><%=address%></textarea></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="text-align: left; marginLeft:2%">Vehicle Registration Number:</td>
+              <td><input id="profileNumberPlate" class="form-control" type="text" name="numberPlate" value="<%=numberPlate%>" disabled></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td style="text-align: center"><button id="profileSave" class="btn btn-dark"  type="submit" name="submit">Save</button></td>
+            </tr>
+          </form>
+
+
+        </table>
+
+    </div>
+
+</div>
+<script type="text/javascript">
+  $(document).ready(()=>{
+    $('#profileSave').hide()
+  })
+  function editDetails(){
+    $("#profileName").prop("disabled",false)
+    $("#profileEmail").prop("disabled",false)
+    $("#profilePhone").prop("disabled",false)
+    $("#profileAddress").prop("disabled",false)
+    $("#profileNumberPlate").prop("disabled",false)
+    $("#profileSave").show()
+    // prop("disabled",false)
+  }
+</script>
+<%- include("partials/footer")%>
