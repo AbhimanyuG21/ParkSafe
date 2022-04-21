@@ -37,7 +37,7 @@ app.use(passport.session())
 app.use(flash())
 
 const dbUrl= "mongodb+srv://admin-AbhimanyuG21:"+process.env.DBPASSWORD+"@cluster0.5amyo.mongodb.net/parkingAuthDB"
-mongoose.connect(dbUrl)
+mongoose.connect(dbUrl || process.env.MONGODB_URI)
 
 sendgrid.setApiKey(SENDGRID_API_KEY)
 
