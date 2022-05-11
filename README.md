@@ -14,10 +14,10 @@ You can find the screenshots of the project for reference and feel of it as foll
 
 ![Home Screen](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "Home Screen")
 
-![Login Screen](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "Login Screen")
+![Login Screen](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/login%20page.PNG "Login Screen")
 
-![Parking Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "Parking Page")
+![Parking Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/parking%20site.PNG "Parking Page")
 
-![User Bookings Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "User bookings page")
+![User Bookings Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/user%20bookings.PNG "User bookings page")
 
-![User Details Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "User Details Page")
+![User Details Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/user%20details.PNG "User Details Page")
