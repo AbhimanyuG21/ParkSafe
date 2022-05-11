@@ -10,3 +10,14 @@ to feedback.
 
 The project has also been deployed using heroku and can be found at https://park-safe-app.herokuapp.com/
 
+You can find the screenshots of the project for reference and feel of it as follows.
+
+![Home Screen](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "Home Screen")
+
+![Login Screen](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "Login Screen")
+
+![Parking Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "Parking Page")
+
+![User Bookings Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "User bookings page")
+
+![User Details Page](https://github.com/AbhimanyuG21/ParkSafe/blob/main/updated%20ss/Home.PNG "User Details Page")
